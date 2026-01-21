@@ -2,6 +2,37 @@
 
 An AI-powered Spanish learning web application that helps you learn Spanish through personalized vocabulary tests, daily words, structured lessons, and custom story generation.
 
+## 🚀 Quick Start - Deploy Now!
+
+Ready to deploy? **[See DEPLOYMENT.md](./DEPLOYMENT.md)** for complete step-by-step instructions!
+
+- **Frontend**: Netlify (free)
+- **Backend**: Render (free)
+- **Time needed**: 15 minutes
+- **Cost**: Free (except OpenAI API usage ~$1-5/month)
+
+### Or Run Locally
+
+```bash
+# Quick start (requires OpenAI API key in server/.env)
+./start.sh
+
+# Or manually:
+# Terminal 1 - Backend
+cd server
+npm install
+npm run dev
+
+# Terminal 2 - Frontend
+cd client
+npm install
+npm run dev
+```
+
+Visit http://localhost:5173 to start learning!
+
+---
+
 ## Features
 
 ### 📚 Weekly Vocabulary Test

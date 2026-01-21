@@ -12,7 +12,15 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
+// Configure CORS for production and development
+const corsOptions = {
+  origin: process.env.NODE_ENV === 'production'
+    ? [/\.netlify\.app$/, /localhost:\d+$/]
+    : '*',
+  credentials: true
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Routes
